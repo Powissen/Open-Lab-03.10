@@ -6,7 +6,15 @@ namespace Open_Lab_03._10
     {
         public int GetNumberOfCharsInString(char letter, string str)
         {
-            throw new NotImplementedException();
+            int NumberOfLetters = 0;
+            foreach (char word in str)
+            {
+                if (word.Equals(letter))
+                {
+                    NumberOfLetters++;
+                }
+            }
+            return NumberOfLetters;
         }
     }
 }
